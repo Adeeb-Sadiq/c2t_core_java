@@ -1,6 +1,6 @@
-package v85CoreJavaProject;
+package basics;
 
-public class secondProgram {
+public class addingTwoNumbers {
 	public static void main(String args[]) {
 		short a = 10;
 		short b = 20;

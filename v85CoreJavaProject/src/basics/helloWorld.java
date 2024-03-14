@@ -1,6 +1,6 @@
-package v85CoreJavaProject;
+package basics;
 
-public class firstProgram {
+public class helloWorld {
 	public static void main(String args[]) {
 		System.out.println("Hello World!!!");
 	}
