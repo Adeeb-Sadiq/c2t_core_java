@@ -1,5 +1,7 @@
 package com.tnif.inheritance;
 
+import com.tnif.inheritance.multiLevel.City;
+
 public class MLinheritance {
 
 	public static void main(String[] args) {
