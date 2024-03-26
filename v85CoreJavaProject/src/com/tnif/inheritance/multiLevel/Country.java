@@ -1,4 +1,4 @@
-package com.tnif.inheritance;
+package com.tnif.inheritance.multiLevel;
 
 public class Country {
 	private String countryName;

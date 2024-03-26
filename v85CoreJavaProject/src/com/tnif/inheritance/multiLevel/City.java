@@ -1,4 +1,4 @@
-package com.tnif.inheritance;
+package com.tnif.inheritance.multiLevel;
 
 public class City extends State{
 	private String cityName;
