@@ -1,4 +1,4 @@
-package com.tnif.inheritance.multiLevel;
+package com.tnif.inheritance;
 
 public class MLinheritance {
 
