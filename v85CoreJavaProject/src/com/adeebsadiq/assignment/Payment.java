@@ -1,5 +1,7 @@
 package com.adeebsadiq.assignment;
 
+import java.util.Scanner;
+
 // main included in this class
 public class Payment {
 	private String userName;
@@ -58,10 +60,39 @@ public class Payment {
 	}
 	
 	public static void main(String[] args) {
-		Payment cash = new Payment("Abc","cash",20000);
-		Payment upi = new Payment("Xyz","Upi",50000,89765423);
-		Payment card = new Payment("Pqr","credit card",120000,"4682 4865 1235");
+		Scanner sc = new Scanner(System.in);
+		int option;
+		String username;
+		String mode;
+		float amount;
+		long upi;
+		String cardno;
 		
+		System.out.println("Thanks for confirming the order, please fill the payment details to generate receipt.");
+		
+		System.out.println("Enter the user name.");
+		username = sc.nextLine();
+		System.out.println("Your amount is 20000");
+		
+		System.out.println("Select the payment method below: \n1.Cash\n2.Upi\n3.Credit card");
+		option = sc.nextInt();
+		if (option == 1) {
+			Payment obj = new Payment(username,"Cash",20000);
+		}
+		else if (option == 2) {
+			System.out.println("Enter upi id: ");
+			upi = sc.nextLong();
+			Payment obj = new Payment(username,"Cash",20000,upi);
+		}
+		else if (option == 3) {
+			System.out.println("Enter card number: ");
+			cardno = sc.next();
+			System.out.println();
+			Payment obj = new Payment(username,"Cash",20000,cardno);
+		}
+		else {
+			System.out.println("Invalid input.");
+		}
 	}
 }
 
