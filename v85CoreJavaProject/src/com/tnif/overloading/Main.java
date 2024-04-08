@@ -8,5 +8,9 @@ public class Main {
 		
 		System.out.println("Example for method overloading.");
 		System.out.println(a + " " + b);
+		
+		System.out.println("Example for constructor overloading.");
+		ConstructorOverloading x = new ConstructorOverloading();
+		ConstructorOverloading y = new ConstructorOverloading("obj");
 	}
 }
