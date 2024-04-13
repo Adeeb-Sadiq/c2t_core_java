@@ -2,7 +2,7 @@ package com.tnif.exceptionHandling;
 
 import java.util.Scanner;
 
-public class Main {
+public class Demo {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Main {
 			System.out.println("the value of c is: "+ c);
 		}
 		catch(Exception e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 		finally {
 			System.out.println("This is finally block");
